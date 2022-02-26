@@ -1,0 +1,88 @@
+.product {
+  &__zb9 {
+    margin-top: 16.8rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-primary;
+    height: 56rem;
+    position: relative;
+    overflow: hidden;
+    //prettier-ignore
+    @include  importAndAdjustBackground("../assets/home/desktop/pattern-circles.svg",-15rem,-5rem);
+    border-radius: 0.8rem;
+  }
+
+  &__img {
+    &-zb9 {
+      height: 48rem;
+      position: absolute;
+      top: 9rem;
+      left: 11.7rem;
+      position: relative;
+    }
+  }
+
+  &__title-zb9 {
+    width: 35rem;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  //!\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+  &__zx7 {
+    margin-top: 4.8rem; //! shevcavlao
+    //prettier-ignore
+    @include  importAndAdjustBackground("../assets/home/desktop/image-speaker-zx7.jpg",-1rem,0);
+    height: 32rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.8rem;
+  }
+
+  &__title-zx7 {
+    margin-left: 9.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  //!\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+  &__yx1 {
+    margin-top: 4.8rem; //! shevcavlao
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 3rem;
+    overflow: hidden;
+    border-radius: 0.8rem;
+  }
+  &__container {
+    background-color: $color-gray-light;
+    display: flex;
+    align-items: center;
+  }
+  &__title-yx1 {
+    margin-left: 9.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+}
+
+.products {
+  display: grid;
+  grid-template-rows: 56rem 32rem 32rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.gird {
+  display: grid;
+  grid-template-rows: 56rem 32rem 32rem;
+  grid-template-columns: repeat(2, 1fr);
+}

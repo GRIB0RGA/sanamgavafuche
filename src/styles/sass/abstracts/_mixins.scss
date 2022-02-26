@@ -1,0 +1,36 @@
+@mixin headerMixin($fontSize, $lineHeight, $letterSpacing) {
+  @extend .heading;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpacing;
+}
+
+@mixin seeProductBtnMaker($BGcolor, $color) {
+  background-color: $BGcolor;
+  color: $color;
+}
+
+@mixin linksAndBtn {
+  font-family: "Manrope", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  letter-spacing: 0.2rem;
+  color: $color-white;
+}
+
+@mixin backgroundWithCustomGradient($col1, $col2, $colorOpacity, $img) {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($col1, $colorOpacity),
+      rgba($col2, $colorOpacity)
+    ),
+    url($img);
+}
+
+@mixin importAndAdjustBackground($url, $x, $y) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-position: $x $y;
+}

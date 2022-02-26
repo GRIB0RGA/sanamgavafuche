@@ -1,0 +1,54 @@
+.btn {
+  width: 16rem;
+  height: 4.8rem;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  @include linksAndBtn;
+  transition: all 0.3s;
+  &--orange {
+    @include seeProductBtnMaker($color-primary, $color-white);
+    &:hover {
+      @include seeProductBtnMaker($color-primary-light, $color-white);
+    }
+  }
+  &--transparent {
+    @include seeProductBtnMaker(transparent, $color-black-2);
+    border: 1px solid $color-black-2;
+    &:hover {
+      @include seeProductBtnMaker($color-black-2, $color-white);
+    }
+  }
+  &--black {
+    @include seeProductBtnMaker($color-black-1, $color-white);
+
+    &:hover {
+      @include seeProductBtnMaker($color-black-hover, $color-white);
+    }
+  }
+}
+
+.categories__btn {
+  @extend .sub-title;
+  border: none;
+  background-color: none;
+  color: $color-black-1;
+  font-weight: 700;
+  opacity: 0.5;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    color: $color-primary;
+  }
+  &::after {
+    position: absolute;
+    top: 25%;
+    left: 120%;
+    display: inline-block;
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    background: url(../assets/shared/desktop/icon-arrow-right.svg) no-repeat;
+  }
+}
