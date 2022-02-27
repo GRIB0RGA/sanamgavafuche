@@ -1,0 +1,24 @@
+.zigzag {
+  margin-top: 16rem;
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+  align-items: center;
+  position: relative;
+  &__card {
+    height: 56rem;
+    display: flex;
+    align-items: center;
+    gap: 12.5rem;
+  }
+  &__image {
+    object-fit: cover;
+    width: 54rem;
+    height: 100%;
+    border-radius: $border-radius-default;
+  }
+  &__title {
+    @include applyGapOnH2PButton;
+    width: 44.5rem;
+  }
+}

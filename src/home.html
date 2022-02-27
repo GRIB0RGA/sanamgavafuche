@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,118 +9,144 @@
   <link rel="stylesheet" href="styles/styles.css">
   <title>Frontend Mentor | Audiophile e-commerce website</title>
 </head>
+
 <body>
-  
-  <header class="header">
-    
+
+  <header id="header" class="header header__home">
+
     <div class="header__container">
-      <nav class="navbar">
-      <img src="assets/shared/desktop/logo.svg" alt="">
-      <ul class="navbar__list">
-        <a href="#" class="navbar__link">Home</a>
-        <a href="#" class="navbar__link">Headphones</a>
-        <a href="#" class="navbar__link">Speakers</a>
-        <a href="#" class="navbar__link">Earphones</a>
-      </ul>
-      <img class="navbar__icon" src="assets/shared/desktop/icon-cart.svg" alt="">
+      <nav class="navbar navbar__header">
+        <img src="assets/shared/desktop/logo.svg" alt="Logo">
+        <ul class="navbar__list">
+          <a href="./home.html" class="navbar__link">Home</a>
+          <a href="./components/pages/headphones.html" class="navbar__link">Headphones</a>
+          <a href="./components/pages/speakers.html" class="navbar__link">Speakers</a>
+          <a href="./components/pages/earphones.html" class="navbar__link">Earphones</a>
+        </ul>
+        <img class="navbar__icon" src="assets/shared/desktop/icon-cart.svg" alt="cartIcon">
       </nav>
       <div class="home-banner">
         <div class="home-banner__title">
           <p class="overline overline--white">New product</p>
-          <h1 class="heading__1 heading__1--white">
-           
+          <h1 class="heading__1 c-white">
             XX99 Mark II Headphones
           </h1>
-          <p class="home-banner__text text">Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.</p>
-          <button class="btn btn--orange mr-xs-t">See product</button>
+          <p class="home-banner__text text text--gray">Experience natural, lifelike audio and exceptional build quality
+            made for the passionate music enthusiast.</p>
+          <button class="btn btn--orange mr-xs-t"
+            onclick="location.replace('./components/products/headphones/product-xx99-mark-two-headphones.html')">See
+            product</button>
         </div>
-        
-       
-      
+
+
+
       </div>
     </div>
-   
+
   </header>
 
- 
+  <main id="main" class="main">
 
-  
- 
-  <main id="main">
-
-    <div class="categories">
+    <section class="section__categories section__categories--main">
       <div class="categories__card categories__headphones">
-        <img class="categories__img" src="./assets/shared/desktop/image-category-thumbnail-headphones.png" alt="">
+        <img class="categories__img" src="./assets/shared/desktop/image-category-thumbnail-headphones.png"
+          alt="headphones">
         <h6 class=" categories__heading heading__6">Headphones</h6>
-        <button class="categories__btn">Shop</button>
+        <button class="categories__btn" onclick="location.replace('./components/pages/headphones.html')">Shop</button>
       </div>
       <div class="categories__card categories__speakers">
-        <img class="categories__img" src="./assets/shared/desktop/image-category-thumbnail-speakers.png" alt="">
+        <img class="categories__img" src="./assets/shared/desktop/image-category-thumbnail-speakers.png" alt="speakers">
         <h6 class="categories__heading heading__6">Speakers</h6>
-        <button class="categories__btn">Shop</button>
+        <button class="categories__btn" onclick="location.replace('./components/pages/speakers.html')">Shop</button>
       </div>
       <div class="categories__card categories__earphones">
-        <img class="categories__img" src="./assets/shared/desktop/image-category-thumbnail-earphones.png" alt="">
+        <img class="categories__img" src="./assets/shared/desktop/image-category-thumbnail-earphones.png"
+          alt="earphones">
         <h6 class="categories__heading heading__6">Earphones</h6>
-        <button class="categories__btn">Shop</button>
+        <button class="categories__btn" onclick="location.replace('./components/pages/earphones.html')">Shop</button>
       </div>
-    </div>
+    </section>
 
 
 
-    <div class="products">
+    <section class="section__products">
       <div class="product product__zb9">
         <img class="product__img-zb9" src="./assets/home/desktop/image-speaker-zx9.png" alt="ZX9">
         <div class="product__title product__title-zb9">
           <h1 class="heading__1 heading__1--white">ZX9 speaker</h1>
           <p class="text">Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.</p>
-          <button class="btn btn--black mr-xs-t">See product</button>
+          <button class="btn btn--black mr-xs-t"
+            onclick="location.replace('./components/products/speakers/product-zx9-speaker.html')">See product</button>
         </div>
       </div>
       <div class="product product__zx7">
         <div class="product__title product__title-zx7">
           <h4 class="heading__4">ZX7 speaker</h4>
-          <button class="btn btn--transparent">See product</button>
+          <button class="btn btn--transparent"
+            onclick="location.replace('./components/products/speakers/product-zx7-speaker.html')">See product</button>
         </div>
       </div>
+
+      <img class="product__img-yx1" src="./assets/home/desktop/image-earphones-yx1.jpg" alt="ZX9">
       <div class="product product__yx1">
-        <img class="product__img-yx1" src="./assets/home/desktop/image-earphones-yx1.jpg" alt="ZX9">
-        <div class="product__container">
-          <div class="product__title product__title-yx1">
+        <div class="product__title product__title-yx1">
           <h4 class="heading__4">YX1 earphones</h4>
-          <button class="btn btn--transparent">See product</button>
-              </div>
+          <button class="btn btn--transparent"
+            onclick="location.replace('./components/products/earphones/product-earphones.html')">See product</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__about section__about--main">
+
+      <div class="about__title">
+        <h2 class="heading__2">Bringing you the <span>best</span> audio gear</h2>
+        <p class="text text--gray-dark">
+          Located at the heart of New York City, Audiophile is the premier store for high end headphones,
+          earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration
+          rooms available for you to browse and experience a wide range of our products. Stop by our store
+          to meet some of the fantastic people who make Audiophile the best place to buy your portable
+          audio equipment.
+        </p>
+      </div>
+      <img src="./assets/shared/desktop/image-best-gear.jpg" alt="aboutImg" class="about__img">
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="footer__container">
+      <nav class="navbar navbar__footer">
+        <img src="assets/shared/desktop/logo.svg" alt="Logo">
+        <ul class="navbar__list">
+          <a href="#" class="navbar__link">Home</a>
+          <a href="./components/pages/headphones.html" class="navbar__link">Headphones</a>
+          <a href="./components/pages/speakers.html" class="navbar__link">Speakers</a>
+          <a href="./components/pages/earphones.html" class="navbar__link">Earphones</a>
+        </ul>
+      </nav>
+
+      <div class="footer__grid">
+        <div class="footer__text">
+          <p class="text text--gray">
+            Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers
+            and sound specialists who are devoted to helping you get the most out of personal audio. Come and
+            visit our demo facility - we’re open 7 days a week.
+          </p>
+          <p class="text text--gray">Copyright 2021. All Rights Reserved</p>
+        </div>
+        <div class="footer__social">
+          <a href=""><img src="./assets/shared/desktop/icon-facebook.svg" alt="FbIcon" class="footer__icon"></a>
+          <a href=""><img src="./assets/shared/desktop/icon-twitter.svg" alt="TwitterIcon" class="footer__icon"></a>
+          <a href=""><img src="./assets/shared/desktop/icon-instagram.svg" alt="InstagramIcon" class="footer__icon"></a>
         </div>
       </div>
     </div>
+  </footer>
 
-  </main>
- 
 
-  
 
- 
 
-  
-
-  
-
-  Bringing you the best audio gear
-  Located at the heart of New York City, Audiophile is the premier store for high end headphones, 
-  earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration 
-  rooms available for you to browse and experience a wide range of our products. Stop by our store 
-  to meet some of the fantastic people who make Audiophile the best place to buy your portable 
-  audio equipment.
-
-  Home
-  Headphones
-  Speakers
-  Earphones
-
-  Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers 
-  and sound specialists who are devoted to helping you get the most out of personal audio. Come and 
-  visit our demo facility - we’re open 7 days a week.
-
-  Copyright 2021. All Rights Reserved
 </body>
+
 </html>

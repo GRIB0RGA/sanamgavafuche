@@ -34,3 +34,25 @@
   background-repeat: no-repeat;
   background-position: $x $y;
 }
+
+@mixin applyGapOnH2PButton {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+@mixin makeHeader($height) {
+  display: flex;
+  justify-content: center;
+  height: $height;
+}
+
+@mixin flexColumnGap($gap) {
+  display: flex;
+  flex-direction: column;
+  gap: $gap;
+}
+@mixin flexRowGap($gap) {
+  display: flex;
+  gap: $gap;
+}

@@ -1,6 +1,7 @@
 $color-primary: #d87d4a;
 $color-primary-light: #fbaf85;
 $color-black-1: #000000;
+$color-black-light: hsla(0, 0%, 0%, 0.5);
 $color-black-2: #0e0e0e;
 $color-black-3: #101010;
 $color-black-hover: #4c4c4c;
@@ -8,3 +9,8 @@ $color-gray: #979797;
 $color-gray-light: #f1f1f1;
 $color-gray-superLight: #fafafa;
 $color-white: #ffffff;
+$color-white-dark: rgba(255, 255, 255, 0.5);
+
+$border-radius-default: 0.8rem;
+
+$width-default: 111rem;

@@ -1,0 +1,66 @@
+.product {
+  &__zb9 {
+    grid-area: 1/1/2/4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-primary;
+    height: 56rem;
+    position: relative;
+    overflow: hidden;
+    //prettier-ignore
+    @include  importAndAdjustBackground("../assets/home/desktop/pattern-circles.svg",-15rem,-5rem);
+    border-radius: $border-radius-default;
+  }
+
+  &__zx7 {
+    grid-area: 2/1/3/4;
+    //prettier-ignore
+    @include  importAndAdjustBackground("../assets/home/desktop/image-speaker-zx7.jpg",-1rem,0);
+    height: 32rem;
+    display: flex;
+    align-items: center;
+    border-radius: $border-radius-default;
+  }
+
+  &__yx1 {
+    grid-area: 3/2/4/4;
+    background-color: $color-gray-light;
+    display: flex;
+    align-items: center;
+  }
+
+  //! Images \\\
+  &__img {
+    &-zb9 {
+      height: 48rem;
+      position: absolute;
+      top: 9rem;
+      left: 11.7rem;
+      position: relative;
+    }
+    &-yx1 {
+      grid-area: 3/1/4/2;
+    }
+  }
+  //! Titles \\\
+  &__title {
+    &-zb9 {
+      width: 35rem;
+      justify-self: center;
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+    }
+    &-zx7 {
+      margin-left: 9.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 3.2rem;
+    }
+    &-yx1 {
+      @extend .product__title-zx7;
+    }
+  }
+}

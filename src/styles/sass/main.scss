@@ -1,14 +1,23 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
 @import "abstracts/helpers";
+@import "abstracts/animations";
 
 @import "base/reset";
 @import "base/typography";
 
 @import "components/buttons";
+@import "components/zigzag";
 //
 @import "layout/mainContainer";
 @import "layout/header.scss";
 @import "layout/navigation.scss";
-@import "layout/categories";
-@import "layout/products";
+@import "layout/footer";
+
+@import "layout/sections/sections";
+@import "layout/sections/categories";
+@import "layout/sections/products";
+@import "layout/sections/about";
+@import "layout/sections/features";
+@import "layout/sections/productGallery";
+@import "layout/sections/suggestions";

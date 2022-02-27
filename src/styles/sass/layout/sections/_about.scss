@@ -1,0 +1,8 @@
+.about {
+  &__title {
+    @include applyGapOnH2PButton;
+  }
+  &__img {
+    border-radius: $border-radius-default;
+  }
+}

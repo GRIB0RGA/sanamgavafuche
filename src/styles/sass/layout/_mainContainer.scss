@@ -1,6 +1,10 @@
-#main {
-  max-width: 110rem;
+.main {
+  max-width: $width-default;
   margin: 0 auto;
-
-  padding-bottom: 80rem;
+  &__products,
+  &__pages {
+    display: flex;
+    flex-direction: column;
+    gap: 16rem;
+  }
 }
