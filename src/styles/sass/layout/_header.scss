@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  background-color: $color-black-2;
+  background-color: $color-secondary;
   &__home {
     @include makeHeader(75rem);
   }

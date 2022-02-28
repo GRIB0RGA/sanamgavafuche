@@ -1,16 +1,23 @@
+//! Colors \\\
+
 $color-primary: #d87d4a;
 $color-primary-light: #fbaf85;
-$color-black-1: #000000;
-$color-black-light: hsla(0, 0%, 0%, 0.5);
-$color-black-2: #0e0e0e;
-$color-black-3: #101010;
-$color-black-hover: #4c4c4c;
-$color-gray: #979797;
-$color-gray-light: #f1f1f1;
-$color-gray-superLight: #fafafa;
-$color-white: #ffffff;
-$color-white-dark: rgba(255, 255, 255, 0.5);
 
+$color-secondary: #0d0d0d;
+$color-secondary-light: #00000080;
+$color-secondary-dark: #000000;
+$color-secondary-2: #0f0f0f; //? useless atm
+
+$color-gray-dark: hsl(0, 0%, 30%);
+$color-gray: hsl(0, 0%, 59%);
+$color-gray-light: hsla(0, 0%, 100%, 0.502);
+
+$color-white-darker: hsl(0, 0%, 98%); //? useless atm
+$color-white-dark: hsl(0, 0%, 95%);
+$color-white: hsl(0, 0%, 100%);
+
+//! Border Radius \\\
 $border-radius-default: 0.8rem;
 
+//! Width \\\
 $width-default: 111rem;

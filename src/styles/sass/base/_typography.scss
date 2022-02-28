@@ -56,13 +56,13 @@
   line-height: 2.5rem;
   color: $color-white;
   &--black {
-    color: $color-black-1;
+    color: $color-secondary-dark;
   }
   &--gray-dark {
-    color: $color-black-light;
+    color: $color-secondary-light;
   }
   &--gray {
-    color: $color-white-dark;
+    color: $color-gray-light;
   }
 }
 .c-white {

@@ -11,7 +11,7 @@
   }
   &__item {
     @extend .text;
-    color: $color-black-light;
+    color: $color-secondary-light;
     @include flexRowGap(2.1rem);
   }
   &__quantity {

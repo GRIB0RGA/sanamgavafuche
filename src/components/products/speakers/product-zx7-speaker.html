@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../../styles/styles.css">
+  <link rel="stylesheet" href="/src/styles/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
 
   <title>Frontend Mentor | Audiophile e-commerce website</title>
@@ -14,14 +14,14 @@
   <header class="header header__products">
     <div class="header__container">
       <nav class="navbar navbar__header">
-        <img src="../../../assets/shared/desktop/logo.svg" alt="Logo">
+        <img src="/src/assets/shared/desktop/logo.svg" alt="Logo">
         <ul class="navbar__list">
-          <a href="../../../home.html" class="navbar__link">Home</a>
-          <a href="../../pages/headphones.html" class="navbar__link">Headphones</a>
-          <a href="../../pages/speakers.html" class="navbar__link">Speakers</a>
-          <a href="../../pages/earphones.html" class="navbar__link">Earphones</a>
+          <li><a href="/src/home.html" class="navbar__link">Home</a></li>
+          <li><a href="/src/components/pages/headphones.html" class="navbar__link">Headphones</a></li>
+          <li><a href="/src/components/pages/speakers.html" class="navbar__link">Speakers</a></li>
+          <li><a href="/src/components/pages/earphones.html" class="navbar__link">Earphones</a></li>
         </ul>
-        <img class="navbar__icon" src="../../../assets/shared/desktop/icon-cart.svg" alt="cartIcon">
+        <img class="navbar__icon" src="/src/assets/shared/desktop/icon-cart.svg" alt="cartIcon">
       </nav>
 
     </div>
@@ -35,7 +35,7 @@
     <div class="zigzag">
       <button class="text text--gray-dark go-back__btn ">Go back</button>
       <div class="zigzag__card">
-        <img src="../../../assets/product-zx7-speaker/desktop/image-product.jpg" class="zigzag__image" alt="ZX7">
+        <img src="/src/assets/product-zx7-speaker/desktop/image-product.jpg" class="zigzag__image" alt="ZX7">
         <div class="zigzag__title">
           <h1 class="heading__2">ZX7 Speaker</h1>
           <p class="text text--gray-dark">
@@ -51,7 +51,7 @@
               <button class="quantity__btn quantity__btn--plus">+</button>
             </div>
 
-            <button class="btn btn--orange ">Add to cart</button>
+            <button class="btn__primary btn__primary--orange ">Add to cart</button>
 
           </div>
 
@@ -102,11 +102,11 @@
 
 
     <section class="section__product-gallery">
-      <img src="../../../assets/product-zx7-speaker/desktop/image-gallery-1.jpg" alt=""
+      <img src="/src/assets/product-zx7-speaker/desktop/image-gallery-1.jpg" alt="zx7-gallery-img1"
         class="product-gallery__img product-gallery__img--1">
-      <img src="../../../assets/product-zx7-speaker/desktop/image-gallery-2.jpg" alt=""
+      <img src="/src/assets/product-zx7-speaker/desktop/image-gallery-2.jpg" alt="zx7-gallery-img2"
         class="product-gallery__img product-gallery__img--2">
-      <img src="../../../assets/product-zx7-speaker/desktop/image-gallery-3.jpg" alt=""
+      <img src="/src/assets/product-zx7-speaker/desktop/image-gallery-3.jpg" alt="zx7-gallery-img3"
         class="product-gallery__img product-gallery__img--3">
     </section>
 
@@ -118,50 +118,50 @@
 
 
       <div class="suggestion suggestion__1">
-        <img class="suggestion__image" src="../../../assets/shared/desktop/image-zx9-speaker.jpg" alt="zx9">
+        <img class="suggestion__image" src="/src/assets/shared/desktop/image-zx9-speaker.jpg" alt="zx9">
         <h5 class="heading__5">ZX9 Speaker</h5>
-        <button class="btn btn--orange"
-          onclick="location.replace('../../products/speakers/product-zx9-speaker.html')">See
+        <button class="btn__primary btn__primary--orange"
+          onclick="location.replace('/src/components/products/speakers/product-zx9-speaker.html')">See
           product</button>
       </div>
 
       <div class="suggestion suggestion__2">
-        <img class="suggestion__image" src="../../../assets/shared/desktop/image-xx99-mark-one-headphones.jpg"
+        <img class="suggestion__image" src="/src/assets/shared/desktop/image-xx99-mark-one-headphones.jpg"
           alt="mark1">
         <h5 class="heading__5">XX99 Mark I</h5>
-        <button class="btn btn--orange"
-          onclick="location.replace('../../products/headphones/product-xx99-mark-one-headphones.html')">See
+        <button class="btn__primary btn__primary--orange"
+          onclick="location.replace('/src/components/products/headphones/product-xx99-mark-one-headphones.html')">See
           product</button>
       </div>
 
       <div class="suggestion suggestion__3">
-        <img class="suggestion__image" src="../../../assets/shared/desktop/image-xx59-headphones.jpg" alt="mark2">
+        <img class="suggestion__image" src="/src/assets/shared/desktop/image-xx59-headphones.jpg" alt="xx59">
         <h5 class="heading__5">XX59</h5>
-        <button class="btn btn--orange"
-          onclick="location.replace('../../products/headphones/product-xx59-headphones.html')">See
+        <button class="btn__primary btn__primary--orange"
+          onclick="location.replace('/src/components/products/headphones/product-xx59-headphones.html')">See
           product</button>
       </div>
     </section>
 
     <section class="section__categories">
       <div class="categories__card categories__headphones">
-        <img class="categories__img" src="../../../assets/shared/desktop/image-category-thumbnail-headphones.png"
+        <img class="categories__img" src="/src/assets/shared/desktop/image-category-thumbnail-headphones.png"
           alt="headphones">
         <h6 class=" categories__heading heading__6">Headphones</h6>
 
-        <button class="categories__btn" onclick="location.replace('../../pages/headphones.html')">Shop</button>
+        <button class="btn__text--with-arrow" onclick="location.replace('/src/components/pages/headphones.html')">Shop</button>
       </div>
       <div class="categories__card categories__speakers">
-        <img class="categories__img" src="../../../assets/shared/desktop/image-category-thumbnail-speakers.png"
+        <img class="categories__img" src="/src/assets/shared/desktop/image-category-thumbnail-speakers.png"
           alt="speakers">
         <h6 class="categories__heading heading__6">Speakers</h6>
-        <button class="categories__btn" onclick="location.replace('../../pages/speakers.html')">Shop</button>
+        <button class="btn__text--with-arrow" onclick="location.replace('/src/components/pages/speakers.html')">Shop</button>
       </div>
       <div class="categories__card categories__earphones">
-        <img class="categories__img" src="../../../assets/shared/desktop/image-category-thumbnail-earphones.png"
+        <img class="categories__img" src="/src/assets/shared/desktop/image-category-thumbnail-earphones.png"
           alt="earphones">
         <h6 class="categories__heading heading__6">Earphones</h6>
-        <button class="categories__btn" onclick="location.replace('../../pages/earphones.html')">Shop</button>
+        <button class="btn__text--with-arrow" onclick="location.replace('/src/components/pages/earphones.html')">Shop</button>
       </div>
     </section>
 
@@ -177,7 +177,7 @@
           audio equipment.
         </p>
       </div>
-      <img src="../../../assets/shared/desktop/image-best-gear.jpg" alt="aboutImg" class="about__img">
+      <img src="/src/assets/shared/desktop/image-best-gear.jpg" alt="aboutImg" class="about__img">
     </section>
 
   </main>
@@ -185,12 +185,12 @@
   <footer id="footer" class="footer">
     <div class="footer__container">
       <nav class="navbar navbar__footer">
-        <img src="../../../assets/shared/desktop/logo.svg" alt="Logo">
+        <img src="/src/assets/shared/desktop/logo.svg" alt="Logo">
         <ul class="navbar__list">
-          <a href="../../../home.html" class="navbar__link">Home</a>
-          <a href="../../pages/headphones.html" class="navbar__link">Headphones</a>
-          <a href="../../pages/speakers.html" class="navbar__link">Speakers</a>
-          <a href="../../pages/earphones.html" class="navbar__link">Earphones</a>
+          <li><a href="/src/home.html" class="navbar__link">Home</a></li>
+          <li><a href="/src/components/pages/headphones.html" class="navbar__link">Headphones</a></li>
+          <li><a href="/src/components/pages/speakers.html" class="navbar__link">Speakers</a></li>
+          <li><a href="/src/components/pages/earphones.html" class="navbar__link">Earphones</a></li>
         </ul>
       </nav>
 
@@ -204,10 +204,10 @@
           <p class="text text--gray">Copyright 2021. All Rights Reserved</p>
         </div>
         <div class="footer__social">
-          <a href="#"><img src="../../../assets/shared/desktop/icon-facebook.svg" alt="FbIcon" class="footer__icon"></a>
-          <a href="#"><img src="../../../assets/shared/desktop/icon-twitter.svg" alt="TwitterIcon"
+          <a href="#"><img src="/src/assets/shared/desktop/icon-facebook.svg" alt="FbIcon" class="footer__icon"></a>
+          <a href="#"><img src="/src/assets/shared/desktop/icon-twitter.svg" alt="TwitterIcon"
               class="footer__icon"></a>
-          <a href="#"><img src="../../../assets/shared/desktop/icon-instagram.svg" alt="InstagramIcon"
+          <a href="#"><img src="/src/assets/shared/desktop/icon-instagram.svg" alt="InstagramIcon"
               class="footer__icon"></a>
         </div>
       </div>
